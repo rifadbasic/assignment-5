@@ -86,7 +86,7 @@
             </div>
             <div>
               <p class="font-light text-primary text-lg">Wed, </p>
-              <p class="font-bold text-primary text-xl ">feb 28 2025 </p>
+              <p class="font-bold text-primary text-xl "><span id="date"></span> </p>
             </div>
           </div>
   
@@ -280,12 +280,12 @@ and ensure onClick works properly
           <img src="assets/activity.png" alt="">
           <p class="font-light text-xl text-primary">Activity Log</p>
         </div>
-        <button class="p-4 bg-btnColor text-white rounded-xl text-xl font-light">Clear History</button>
+        <button id="clr-data" class="p-4 bg-btnColor text-white rounded-xl text-xl font-light">Clear History</button>
       </div>
 
-      <div class="p-4 ">
-        <p class="bg-blue-50 p-4 rounded-lg mb-3 text-secondary opacity-50">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-        <p class="bg-blue-50 p-4 rounded-lg mb-3 text-secondary opacity-50">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+      <div id="history" class="p-4 ">
+        <p class="bg-blue-50 p-4 rounded-lg mb-3 text-secondary opacity-50">You have Complete The Task Add Dark Mode <span>at 12:48:15 PM</span></p>
+        <p class="bg-blue-50 p-4 rounded-lg mb-3 text-secondary opacity-50">You have Complete The Task Add Dark Mode <span>at 12:48:15 PM</span></p>
       </div>
     </div>
    </main>
