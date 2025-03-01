@@ -70,7 +70,7 @@
             </div>
           </div>
   
-          <div class="bg-gradient-to-r from-blue-700 to-violet-400 p-4 col-span-2 order-3 lg:order-2 px-6 w- rounded-lg flex items-center gap-4">
+          <div id="board" class="bg-gradient-to-r from-blue-700 to-violet-400 p-4 col-span-2 order-3 lg:order-2 px-6 w- rounded-lg flex items-center gap-4">
             <div >
               <img src="assets/board.png" alt="">
             </div>
@@ -292,5 +292,12 @@ and ensure onClick works properly
   
   <!-- js link -->
   <script src="style/home.js"></script>
+
+  <script>
+    document.getElementById("board")
+    .addEventListener('click', function(){
+      window.location.href="./blog.html";
+    })
+  </script>
 </body>
 </html>
