@@ -45,7 +45,7 @@
         </div>
 
         <div class="flex items-center gap-4">
-          <p class="flex items-center gap-2 bg-blue-50 p-4 rounded-full" ><img src="assets/checkbox.png" alt=""> <span class="font-bold text-2xl">24</span></p>
+          <p class="flex items-center gap-2 bg-blue-50 p-4 rounded-full" ><img src="assets/checkbox.png" alt=""> <span id="all-task" class="font-bold text-2xl">24</span></p>
           <button class=" bg-blue-50 p-4 rounded-full"><img src="assets/theme-btn.png" alt=""></button>
         </div>
       </div>
@@ -66,7 +66,7 @@
             </div>
             <div>
               <p class="font-light text-primary text-lg">Task Assigned </p>
-              <h3 class="font-extrabold text-primary text-xl">06</h3>
+              <h3  class="font-extrabold text-primary text-xl">0<span id="task-count">6</span></h3>
             </div>
           </div>
   
@@ -94,7 +94,7 @@
 
       </div>
 
-      <div class="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div id="task-parent" class="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
         <div class="bg-blue-50 p-4 rounded-lg">
           
@@ -103,7 +103,7 @@
               <p class="text-xl font-light text-primary">ShopEase</p>
             </div>
             <div class="mb-3">
-              <h3 class="font-medium text-primary text-2xl">Fix Mobile Button Issue </h3>
+              <h3 id="task-name-1" class=" task-name font-medium text-primary text-2xl">Fix Mobile Button Issue </h3>
             </div>
             <div class="h-24 card-text bg-white rounded-lg  mb-3 ">
               <p class="text-secondary opacity-50 p-4 ">
@@ -120,7 +120,7 @@
               ">21 March 2025</p>
             </div>
             <div>
-              <button class="p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
+              <button id="1" onclick="task(1)" class="task-btn p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@
               <p class="text-xl font-light text-primary">CloudSync</p>
             </div>
             <div class="mb-3">
-              <h3 class="font-medium text-primary text-2xl">Add Dark Mode </h3>
+              <h3 id="task-name-2" class="task-name font-medium text-primary text-2xl">Add Dark Mode </h3>
             </div>
             <div class="h-24 card-text bg-white rounded-lg  mb-3 ">
               <p class="text-secondary opacity-50 p-4 ">
@@ -148,7 +148,7 @@
               ">21 March 2025</p>
             </div>
             <div>
-              <button class="p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
+              <button id="2" onclick="task(2)" class="task-btn p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@
               <p class="text-xl font-light text-primary">SwiftPay</p>
             </div>
             <div class="mb-3">
-              <h3 class="font-medium text-primary text-2xl">Optimize  Home page  </h3>
+              <h3 id="task-name-3" class="task-name font-medium text-primary text-2xl">Optimize  Home page  </h3>
             </div>
             <div class="h-24 card-text bg-white rounded-lg  mb-3 ">
               <p class="text-secondary opacity-50 p-4 ">
@@ -177,7 +177,7 @@ and ensure onClick works properly
               ">21 March 2025</p>
             </div>
             <div>
-              <button class="p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
+              <button id="3" onclick="task(3)" class="task-btn p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ and ensure onClick works properly
               <p class="text-xl font-light text-primary">Meta</p>
             </div>
             <div class="mb-3">
-              <h3 class="font-medium text-primary text-2xl">Add new emoji 🤲 </h3>
+              <h3 id="task-name-4" class="task-name font-medium text-primary text-2xl">Add new emoji 🤲 </h3>
             </div>
             <div class="h-24 card-text bg-white rounded-lg  mb-3 ">
               <p class="text-secondary opacity-50 p-4 ">
@@ -206,7 +206,7 @@ and ensure onClick works properly
               ">21 March 2025</p>
             </div>
             <div>
-              <button class="p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
+              <button id="4" onclick="task(4)" class="task-btn p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
             </div>
           </div>
         </div>
@@ -218,7 +218,7 @@ and ensure onClick works properly
               <p class="text-xl font-light text-primary">Google LLC</p>
             </div>
             <div class="mb-3">
-              <h3 class="font-medium text-primary text-2xl">Integrate OpenAI API  </h3>
+              <h3 id="task-name-5" class="task-name font-medium text-primary text-2xl">Integrate OpenAI API  </h3>
             </div>
             <div class="h-24 card-text bg-white rounded-lg  mb-3 ">
               <p class="text-secondary opacity-50 p-4 ">
@@ -235,7 +235,7 @@ and ensure onClick works properly
               ">21 March 2025</p>
             </div>
             <div>
-              <button class="p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
+              <button id="5" onclick="task(5)" class="task-btn p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
             </div>
           </div>
         </div>
@@ -247,7 +247,7 @@ and ensure onClick works properly
               <p class="text-xl font-light text-primary">Glassdoar</p>
             </div>
             <div class="mb-3">
-              <h3 class="font-medium text-primary text-2xl">Improve Job searching </h3>
+              <h3 id="task-name-6" class="task-name font-medium text-primary text-2xl">Improve Job searching </h3>
             </div>
             <div class="h-24 card-text bg-white rounded-lg  mb-3 ">
               <p class="text-secondary opacity-50 p-4 ">
@@ -264,7 +264,7 @@ and ensure onClick works properly
               ">21 March 2025</p>
             </div>
             <div>
-              <button class="p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
+              <button id="6" onclick="task(6)" class=" task-btn p-4 bg-btnColor text-white rounded-xl text-xl font-light">Completed</button>
             </div>
           </div>
         </div>
@@ -284,8 +284,8 @@ and ensure onClick works properly
       </div>
 
       <div id="history" class="p-4 ">
-        <p class="bg-blue-50 p-4 rounded-lg mb-3 text-secondary opacity-50">You have Complete The Task Add Dark Mode <span>at 12:48:15 PM</span></p>
-        <p class="bg-blue-50 p-4 rounded-lg mb-3 text-secondary opacity-50">You have Complete The Task Add Dark Mode <span>at 12:48:15 PM</span></p>
+        <!-- <p class="bg-blue-50 p-4 rounded-lg mb-3 text-secondary opacity-50">You have Complete The Task Add Dark Mode <span>at 12:48:15 PM</span></p>
+        <p class="bg-blue-50 p-4 rounded-lg mb-3 text-secondary opacity-50">You have Complete The Task Add Dark Mode <span>at 12:48:15 PM</span></p> -->
       </div>
     </div>
    </main>
