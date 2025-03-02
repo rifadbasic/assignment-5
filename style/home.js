@@ -19,7 +19,7 @@ function task(number){
 
 
    // task count minus
-   alert("Task no. " + number + " is Completed Successfully");
+   alert("board updated Successfully");
    const taskCount = document.getElementById("task-count");
    const taskCountFormat = parseInt(taskCount.textContent);
    let taskCountValue = taskCountFormat - 1;
@@ -62,17 +62,18 @@ function task(number){
      const length = document.getElementById("history").children.length;
      for (let i = 1; i <= length; i++) {
       if(length == 6){
-        alert("You have Completed All Task");
+        alert("congratulation!! You have Completed All current Task");
         break;
       }
      }
      
 
     //  disable button;
-    const taskBtn = document.getElementById(number).disabled = true;
+    const taskBtn = document.getElementById(number);
     taskBtn.style.background = "#3752FD";
     taskBtn.style.cursor = "not-allowed";
     taskBtn.style.color = "white";
     taskBtn.style.opacity = "0.5";
+    taskBtn.disabled = true;
 }
 
