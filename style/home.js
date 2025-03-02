@@ -14,12 +14,14 @@ document.getElementById('clr-data')
 })
 
 
+
+
 // task count
 function task(number){
 
 
    // task count minus
-   alert("board updated Successfully");
+   alert("Board updated Successfully");
    const taskCount = document.getElementById("task-count");
    const taskCountFormat = parseInt(taskCount.textContent);
    let taskCountValue = taskCountFormat - 1;
@@ -62,7 +64,7 @@ function task(number){
      const length = document.getElementById("history").children.length;
      for (let i = 1; i <= length; i++) {
       if(length == 6){
-        alert("congratulation!! You have Completed All current Task");
+        alert("Congratulation!! You have Completed All current Task");
         break;
       }
      }
@@ -76,4 +78,6 @@ function task(number){
     taskBtn.style.opacity = "0.5";
     taskBtn.disabled = true;
 }
+
+
 

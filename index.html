@@ -46,7 +46,7 @@
 
         <div class="flex items-center gap-4">
           <p class="flex items-center gap-2 bg-blue-50 p-4 rounded-full" ><img src="assets/checkbox.png" alt=""> <span id="all-task" class="font-bold text-2xl">24</span></p>
-          <button class=" bg-blue-50 p-4 rounded-full"><img src="assets/theme-btn.png" alt=""></button>
+          <button id="theme-btn" class=" bg-blue-50 p-4 rounded-full"><img src="assets/theme-btn.png" alt=""></button>
         </div>
       </div>
     </nav>
@@ -284,8 +284,7 @@
       </div>
 
       <div id="history" class="p-4 ">
-        <!-- <p class="bg-blue-50 p-4 rounded-lg mb-3 text-secondary opacity-50">You have Complete The Task Add Dark Mode <span>at 12:48:15 PM</span></p>
-        <p class="bg-blue-50 p-4 rounded-lg mb-3 text-secondary opacity-50">You have Complete The Task Add Dark Mode <span>at 12:48:15 PM</span></p> -->
+       
       </div>
     </div>
    </main>
@@ -294,6 +293,15 @@
   <script src="style/home.js"></script>
 
   <script>
+    // theme color
+    const themeColor = document.getElementById('theme-btn')
+    .addEventListener('click', function(){
+      const randomColor = `#${Math.floor(Math.random() * 26777216).toString(16)}`;
+      console.log(randomColor);
+      document.body.style.backgroundColor = randomColor;
+    });
+
+    // blog
     document.getElementById("board")
     .addEventListener('click', function(){
       window.location.href="./blog.html";
