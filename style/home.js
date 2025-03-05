@@ -1,10 +1,15 @@
 // to fixed date
-const date = new Date('2025-03-02');
 
-const format = { year: 'numeric', month: 'long', day: 'numeric'};
-const dateFormat = date.toLocaleDateString('en-US', format);
+const date = new Date();
+const dateFormate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+document.getElementById("date").textContent = dateFormate;
 
-document.getElementById("date").textContent = dateFormat;
+// to fixed day
+
+const day = new Date();
+const dayFormate = day.toLocaleDateString('en-US', { weekday: 'long' });
+document.getElementById("day").textContent = dayFormate;
+
 
 // for clear data 
 
